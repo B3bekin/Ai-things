@@ -16,7 +16,7 @@ function Home() {
 
       <Image className="z-[2] min-w-full" src={Aibackground} alt="Background of future" />
 
-      <div className="z-[2] flex text-xl text-white relative mt-[-2rem] mx-auto">IM ON TOP LMAOOO</div>
+      <div className=" text-xl text-white mt-[-2rem] ">IM ON TOP LMAOOO</div>
 
       <div className="bg-green-300">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eaque non cumque cum tempore saepe provident, omnis impedit alias necessitatibus inventore laboriosam consequuntur esse facere ullam minima sed dolor earum.
