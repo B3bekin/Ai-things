@@ -12,9 +12,11 @@ function Home() {
 
       <Head className="sticky" />
 
-      <div className="min-w-full bg-gradient-to-b from-white to-blue-300">sdd</div>
+      <div className="min-w-full bg-gradient-to-b from-slate-500 to-blue-950">.</div>
 
-      <Image className="min-w-full" src={Aibackground} alt="Background of future"/>
+      <Image className="z-[2] min-w-full" src={Aibackground} alt="Background of future" />
+
+      <div className="z-[2] flex text-xl text-white relative mt-[-2rem] mx-auto">IM ON TOP LMAOOO</div>
 
       <div className="bg-green-300">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eaque non cumque cum tempore saepe provident, omnis impedit alias necessitatibus inventore laboriosam consequuntur esse facere ullam minima sed dolor earum.

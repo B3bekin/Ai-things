@@ -9,7 +9,7 @@ function Header() {
 
     return (
         <div>
-            <div className="px-16 bg-gradient-to-b from-white to-blue-300">
+            <div className="px-16 bg-gradient-to-b from-white to-slate-500">
                 <div className="flex justify-between items-center py-3">
 
                     <Image src={Logo} width={199} height={64} alt="logo" />
@@ -29,6 +29,7 @@ function Header() {
                                 <p className="mr-7">search</p>
 
                                 <Image src={Glass} width={30} height={30} alt="search"/>
+
                             </div>
                         </div>
                     </div>
