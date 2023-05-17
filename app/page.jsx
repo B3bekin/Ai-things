@@ -8,7 +8,7 @@ import Aibackground from "../public/ai-background.png"
 function Home() {
 
   return (
-    <div className="bg-slate-300 min-h-screen">
+    <div className="min-h-screen">
 
       <Head className="sticky" />
 
@@ -18,25 +18,25 @@ function Home() {
 
       {/*<div className="z-[2] text-xl text-white mt-[-2rem] ">IM ON TOP LMAOOO</div>*/}
 
-      <div className="bg-blue-900 px-12">
-        <div className="bg-slate-400 text-white  px-2 py-6">
-          <div className="flex justify-evenly bg-blue-800 mx-auto ">
-            <p>Key benefits</p>
-            <p>AI-enhanced EDA Suite</p>
-            <p>News</p>
-            <p>Chips for AI Applications</p>
-            <p>Testimonials</p>
-            <p>Resources</p>
-            <p>Contact Sales</p>
-          </div>
-        </div>
+
+
+      <div className="flex justify-cente text-white bg-white gap-px">
+        <p className="bg-blue-900 flex-grow" />
+        <p className="bg-blue-900 p-11">Key benefits</p>
+        <p className="bg-blue-900 p-11">AI-enhanced EDA Suite</p>
+        <p className="bg-blue-900 p-11">News</p>
+        <p className="bg-blue-900 p-11">Chips for AI Applications</p>
+        <p className="bg-blue-900 p-11">Testimonials</p>
+        <p className="bg-blue-900 p-11">Resources</p>
+        <p className="bg-blue-900 p-11">Contact Sales</p>
+        <p className="bg-blue-900 flex-grow" />
       </div>
 
-      <h2 className="pt-5 pb-3">Unleash the power of kreate.ai</h2>
-      <p className="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda necessitatibus quo consequuntur totam blanditiis nulla vero, quos aperiam cumque alias odio, culpa dolorem iusto quisquam?</p>
+      <h2 className="pt-11 pb-3 text-3xl text-center text-blue-800">Unleash the power of kreate.ai</h2>
+      <p className="text-center pb-11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda necessitatibus quo consequuntur totam blanditiis nulla vero, quos aperiam cumque alias odio, culpa dolorem iusto quisquam?</p>
 
-      <div className="min-w-full min-h-screen px-5">
-        <div className="flex flex-row">
+      <div className="min-w-full px-5 bg-slate-300">
+        <div className="flex flex-row py-10">
           <div>
             <h2 className="text-blue-800 text-center text-xl">Maximize Chip Potential</h2>
             <p className="text-center"> Push the limits of silicone value with our AI-driven design solutions.</p>
