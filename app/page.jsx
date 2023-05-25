@@ -1,7 +1,6 @@
 import React from "react"
 import Image from "next/image.js"
-
-import Head from "./header.jsx"
+import Header from "./header"
 
 import Aibackground from "../public/ai-background.png"
 import Brains from "../public/brain.png"
@@ -19,17 +18,19 @@ function Home() {
   return (
     <div className="min-h-screen">
 
-      <Head className="sticky" />
-
-      <div className="min-w-full bg-gradient-to-b from-slate-500 to-blue-950">.</div>
+      <Header />
 
       <Image className="z-[2] min-w-full" src={Aibackground} alt="Background of future" />
+
+      <div className="z-[2] absolute top-[17%] left-[23%] sm:top-[20%] sm:left-[29%] lg:top-[27%] lg:left-[33%] ">
+        <h1 className="text-white text-4xl sm:text-5xl lg:text-7xl">AI Machine learning</h1>
+      </div>
 
       {/*<div className="z-[2] text-xl text-white mt-[-2rem] ">IM ON TOP LMAOOO</div>*/}
 
 
 
-      <div className="flex justify-cente text-white bg-white gap-px">
+      <div className="flex flex-row sm: text-white bg-white gap-px ">
         <p className="bg-blue-900 flex-grow" />
         <p className="bg-blue-900 p-11">Key benefits</p>
         <p className="bg-blue-900 p-11">AI-enhanced EDA Suite</p>
@@ -45,7 +46,7 @@ function Home() {
       <p className="text-center pb-11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda necessitatibus quo consequuntur totam blanditiis nulla vero, quos aperiam cumque alias odio, culpa dolorem iusto quisquam?</p>
 
       <div className="min-w-full px-5 mb-10 bg-slate-300">
-        <div className="flex flex-row py-10 gap-16">
+        <div className="flex flex-col gap-7 md:flex-row md:py-10 md:gap-16">
           <p className="flex-grow" />
           <div>
             <Image className="mx-auto" src={Graph} alt="going up" />
@@ -95,7 +96,7 @@ function Home() {
         <div className="grid">
 
           <div className="col-start-1 col-end-2 min-w-full">.</div>
-          
+
           <div className="col-start-2 col-end-3">
             <Image className="" src={DarkBlue} alt="Ai" />
             <h1 className="text-5xl">Im the header, skyler</h1>
