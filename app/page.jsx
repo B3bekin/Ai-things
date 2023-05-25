@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image.js"
 import Header from "./header"
+import Footer from "./footer"
 
 import Aibackground from "../public/ai-background.png"
 import Brains from "../public/brain.png"
@@ -11,7 +12,7 @@ import Graph from "../public/graph.png"
 import Pink from "../public/ai-tres.png"
 import Green from "../public/ai-qautros.png"
 import DarkBlue from "../public/ai-uno.png"
-//import Orange from "../public/ai-dos.jpg"
+import Orange from "../public/ai-dos.png"
 
 function Home() {
 
@@ -30,15 +31,15 @@ function Home() {
 
 
 
-      <div className="flex flex-row sm: text-white bg-white gap-px ">
+      <div className="flex flex-row flex-wrap text-white bg-white gap-px ">
         <p className="bg-blue-900 flex-grow" />
-        <p className="bg-blue-900 p-11">Key benefits</p>
-        <p className="bg-blue-900 p-11">AI-enhanced EDA Suite</p>
-        <p className="bg-blue-900 p-11">News</p>
-        <p className="bg-blue-900 p-11">Chips for AI Applications</p>
-        <p className="bg-blue-900 p-11">Testimonials</p>
-        <p className="bg-blue-900 p-11">Resources</p>
-        <p className="bg-blue-900 p-11">Contact Sales</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">Key benefits</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">AI-enhanced EDA Suite</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">News</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">Chips for AI Applications</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">Testimonials</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">Resources</p>
+        <p className="bg-blue-900 p-11 hover:bg-blue-800">Contact Sales</p>
         <p className="bg-blue-900 flex-grow" />
       </div>
 
@@ -93,19 +94,38 @@ function Home() {
 
         </div>*/}
 
-        <div className="grid">
-
-          <div className="col-start-1 col-end-2 min-w-full">.</div>
-
-          <div className="col-start-2 col-end-3">
-            <Image className="" src={DarkBlue} alt="Ai" />
-            <h1 className="text-5xl">Im the header, skyler</h1>
-            <h2 className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, magnam optio commodi illo at nostrum unde quidem saepe, nobis earum quae voluptatem eligendi vitae porro dolorum facere dicta corporis! Nobis, animi aut?</h2>
+        <div className="pb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-7">
+            <div className="sm:bg-blue-900" />
+            <div className="col-span-1 md:col-span-5">
+              <div className="flex flex-row flex-wrap xl:flex-nowrap">
+                <div className="bg-blue-900 p-5 ">
+                  <Image src={Pink} />
+                  <div className=" bg-white p-2">
+                    <h1 className="text-3xl font-semibold">One</h1>
+                    <p className="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora accusantium, quod.</p>
+                  </div>
+                </div>
+                <div className="bg-blue-900 p-5">
+                  <Image src={DarkBlue} />
+                  <div className="bg-white p-2">
+                    <h1 className="text-3xl font-semibold">Two </h1>
+                    <p className="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora accusantium, quod.</p>
+                  </div>
+                </div>
+                <div className="bg-blue-900 p-5">
+                  <Image src={Orange} />
+                  <div className="bg-white p-2">
+                    <h1 className="text-3xl font-semibold">three</h1>
+                    <p className="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores tempora accusantium, quod.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="sm:bg-blue-900" />
           </div>
-
-          <div className="col-start-3 col-end-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem voluptatum dolorum fugit cumque recusandae rem est alias magnam numquam. Iure, odio voluptatem! Eius iure, accusantium est odit impedit minus. Laboriosam, laudantium.</div>
         </div>
-
+        <Footer/>
       </div>
     </div>
   )
