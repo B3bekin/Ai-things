@@ -14,26 +14,26 @@ function Header() {
             <div className="px-16 bg-gradient-to-b from-white to-slate-500">
                 <div className="flex justify-between items-center py-3">
 
-                    <Image src={LogoSVG} alt="logo" className="pr-3"/>
+                    <Image src={LogoSVG} alt="logo" className="pr-3 cursor-pointer"/>
 
                     {/* <h1 className="text-5xl">Kreate</h1> */}
 
-                    <ul className="hidden lg:text-3xl lg:flex gap-10 items-center">
-                        <li>Solutions</li>
-                        <li>Products</li>
-                        <li>Support</li>
-                        <li>News</li>
+                    <ul className="hidden lg:text-3xl lg:flex gap-10 items-center cursor-pointer">
+                        <li className="hover:underline">Solutions</li>
+                        <li className="hover:underline">Products</li>
+                        <li className="hover:underline">Support</li>
+                        <li className="hover:underline">News</li>
                     </ul>
 
                     <div className="text-2xl flex flex-row gap-3">
                         <div className="overflow-hidden bg-white  rounded-md px-0.5">
                             <div className="flex gap-14 ml-24">
                                 <p className="mr-7 text-gray-500">search</p>
-                                <Image src={Glass} width={30} height={30} alt="search" />
+                                <Image src={Glass} width={30} height={30} alt="search" className="cursor-pointer" />
                             </div>
                         </div>
 
-                        <div className=" lg:hidden ">
+                        <div className=" lg:hidden cursor-pointer">
                             <Image src={Menu} width={40} height={40} />
                         </div>
                     </div>
